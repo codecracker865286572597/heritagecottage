@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Cottage Hotel</title>
+    <meta name="theme-color" content="#f4f1ec">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="animations.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 data-animation="animate--fade-in">Heritage Cottage Hotel</h1>
+            <!-- <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button> -->
+            <nav data-animation="animate--fade-up" role="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </div>
+
+
+    </header>
+
+    <section id="home" class="hero">
+            <div class="slides" aria-hidden="true">
+                <div class="slide is-active" style="background-image:url('IMG_9628.JPG')"></div>
+                <div class="slide" style="background-image:url('IMG_9624.JPG')"></div>
+                <div class="slide" style="background-image:url('IMG_9625.JPG')"></div>
+            </div>
+            <div class="hero-content" data-animation="animate--scale-in">
+            <h2>Welcome to Heritage Cottage Hotel</h2>
+            <p>Experience the charm of a traditional cottage with modern amenities.</p>
+            <a href="rooms.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section id="highlights" class="rooms">
+        <div class="container">
+            <h2 data-animation="animate--fade-up">Experience Heritage Cottage</h2>
+            <p class="section-sub" data-animation="animate--fade-up">A boutique stay that blends local charm, modern comforts and warm Tanzanian hospitality.</p>
+
+            <div class="room-grid">
+                <div class="room-card" data-animation="animate--fade-up">
+                    <img src="AV8A9602.JPG" alt="Cozy Rooms">
+                    <div class="card-body">
+                        <h3>Comfort & Charm</h3>
+                        <p class="room-desc">Rooms designed for relaxation with comfortable beds, tasteful decor and thoughtful amenities.</p>
+                        <a href="rooms.html" class="btn">View all rooms</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-animation="animate--fade-up">
+                    <img src="_DSC0297.jpg" alt="Local Breakfast">
+                    <div class="card-body">
+                        <h3>Locally Sourced Breakfast</h3>
+                        <p class="room-desc">Start your day with fresh, local ingredients served daily at our main restaurant.</p>
+                        <a href="about.html" class="btn">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <img src="_DSC0187.jpg" alt="Warm Service">
+                    <div class="card-body">
+                        <h3>Personalized Service</h3>
+                        <p class="room-desc">Our team is here to help with tailored recommendations, transfers, and event arrangements.</p>
+                        <a href="contact.html" class="btn">Get in touch</a>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <img src="_DSC0043.jpg" alt="Outside Environment">
+                    <div class="card-body">
+                        <h3>Outside Environment</h3>
+                        <p class="room-desc">Explore our peaceful gardens, shaded courtyards and scenic walkways — perfect for morning walks and evening relaxation.</p>
+                        <a href="gallery.html" class="btn">View gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Heritage Cottage Hotel is a charming boutique hotel located in the heart of the countryside. Our hotel offers a unique blend of traditional charm and modern amenities, making it the perfect destination for a relaxing getaway.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div style="display:flex;gap:32px;align-items:flex-start;flex-wrap:wrap">
+                <div style="flex:1;min-width:260px">
+                    <h2>Get in touch</h2>
+                    <p>For bookings, transfers or enquiries, reach us via phone or email — or visit our dedicated contact page for more options.</p>
+                    <p><strong>Phone:</strong> <a href="tel:+255756653544">+255 756 653 544</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:Hyerafrancis9@gmail.com">Hyerafrancis9@gmail.com</a></p>
+                    <p><a href="contact.html" class="btn">Contact page</a></p>
+                </div>
+
+                <div style="flex:1;min-width:260px">
+                    <h3>Stay in the loop</h3>
+                    <p>Subscribe to our newsletter for exclusive offers and local tips.</p>
+                    <form style="display:flex;gap:8px;max-width:420px;">
+                        <input type="email" placeholder="Your email" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(6,43,51,0.06)" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Heritage Cottage Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

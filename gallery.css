@@ -1,0 +1,213 @@
+/* Gallery page styles */
+.gallery-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url('IMG_9619.JPG');
+    background-position: center;
+    background-size: cover;
+    min-height: 40vh;
+    padding-top: 110px; /* account for fixed header */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 3/2;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(43,20,12,0.06);
+    transition: transform 0.3s ease, box-shadow .22s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 22px 48px rgba(43,20,12,0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 1.5rem 1rem 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+.gallery-categories {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 7rem 0 2rem 0;
+    padding: 0 1rem;
+}
+
+.category-btn {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+.category-btn:focus-visible{
+    outline:2px solid color-mix(in oklab, var(--accent) 60%, white);
+    outline-offset:3px
+}
+
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+.lightbox-nav {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.lightbox-nav button {
+    background: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox-nav button:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+        padding: 2rem 0;
+    }
+    
+    .gallery-caption {
+        transform: translateY(0);
+        padding: 1rem 0.75rem 0.75rem;
+    }
+}
+
+/* Responsive hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    float: right;
+}
+.hamburger span{
+    width: 20px;
+    height: 2px;
+    background-color: #6b655a;
+    margin: 1px 0;
+    transition: 0.3s;
+}
+@media screen and (max-width: 600px){
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+        overflow: auto;
+    }
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #F4F1EC;
+        /* background: rgba(0,0,0,0.2); */
+        /* opacity: 5%; */
+        color: #2F5132;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5 ease;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    nav.active {
+        max-height: 300px;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+        width: 100%;
+    }
+    nav a:hover {
+        background-color: #ddd6c9;
+    }
+    nav a::after {
+        display: none;
+    }
+}
