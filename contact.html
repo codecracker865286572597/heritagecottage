@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Contact — Heritage Cottage Hotel</title>
-    <meta name="theme-color" content="#f0f7fb">
+    <meta name="theme-color" content="#f5f2ea">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact.css">
-    <script src="animations.js" defer></script>
+    <script src="animations.js?v=2" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <h1 data-animation="animate--fade-in">Heritage Cottage Hotel</h1>
-            <nav data-animation="animate--fade-up">
+            <nav id="primary-navigation" aria-label="Primary" data-animation="animate--fade-up">
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="rooms.html">Rooms</a></li>
@@ -25,11 +25,11 @@
                     <li><a href="contact.html" aria-current="page">Contact</a></li>
                 </ul>
             </nav>
-        <div class="hamburger">
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
         </div>
     </header>
 
@@ -58,36 +58,22 @@
                     <div class="social">
                         <h4>Connect with us</h4>
                         <div class="social-icons">
-                            <a href="https://www.bing.com/ck/a?!&&p=e96dd98f792a09952ea02fd155f43f2d909eedd336dabe5909104dbd7a4f530fJmltdHM9MTc2MjczMjgwMA&ptn=3&ver=2&hsh=4&fclid=07efddfa-5d80-69c2-3584-c8425ce36866&psq=heritage+cottage+facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2hlcml0YWdlY290YWdlLw" aria-label="Facebook" class="social-link">
-                                <!-- Facebook SVG -->
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.877v-6.987H7.898v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.89h-2.33V21.88C18.343 21.128 22 16.991 22 12z" fill="#fff"/>
--                                </svg>
-+                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/heritage_cottage_hotel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" class="social-link">
-                                <!-- Instagram SVG -->
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17.5 6.5h.01" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a href="https://www.facebook.com/heritagecottage/" aria-label="Facebook" class="social-link social-link--facebook">
+                                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.7v1.9H6.7v3.2h2.9V21h3.9z" fill="currentColor"/>
                                 </svg>
                             </a>
-                            <a href="#" aria-label="Twitter" class="social-link">
-                                <!-- Twitter SVG -->
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.89.84-3.43 1.02A4.52 4.52 0 0 0 12 5a12.86 12.86 0 0 1-9-4s-4 9 5 13a4.5 4.5 0 0 1-2-.55s.4 2.22 3 3.05A9 9 0 0 1 1 19.54 12.6 12.6 0 0 0 7 21c8.53 0 13-7 13-13v-.59A9.22 9.22 0 0 0 23 3z" fill="#fff"/>
+                            <a href="https://www.instagram.com/heritage_cottage_hotel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram" class="social-link social-link--instagram">
+                                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
                                 </svg>
                             </a>
-                            <a href="https://wa.me/255756653544?text=Hello%20Heritage%20Cottage%20Hotel%2C%20I'd%20like%20to%20inquire%20about%20your%20rooms%20and%20services." aria-label="WhatsApp" class="social-link whatsapp-link" target="_blank" rel="noopener">
-                                <!-- WhatsApp SVG with speech bubble and phone -->
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Outer circle background -->
-                                    <circle cx="12" cy="12" r="11" fill="#25d366"/>
-                                    <!-- Speech bubble outline -->
-                                    <path d="M6.5 17.5C5 16 4.5 14 4.5 12C4.5 7.8 7.8 4.5 12 4.5C16.2 4.5 19.5 7.8 19.5 12C19.5 16.2 16.2 19.5 12 19.5C11 19.5 10 19.3 9.2 19L6.5 20L7.2 17.3C6.5 16.5 6.5 17.5 6.5 17.5Z" fill="#fff"/>
-                                    <!-- Phone icon inside -->
-                                    <path d="M9 9.5C9.3 8.9 9.7 8.7 10.2 8.7C10.5 8.7 10.8 8.8 11 9L12.2 10.7C12.4 11 12.4 11.4 12.2 11.6L11.5 12.3C11.6 12.6 11.9 13.1 12.5 13.7C13.1 14.3 13.6 14.6 13.9 14.7L14.6 14C14.8 13.8 15.2 13.8 15.4 14L17.1 15.2C17.3 15.4 17.4 15.7 17.4 16C17.4 16.5 17.2 16.9 16.6 17.2C16.1 17.5 15.5 17.6 14.9 17.4C12.7 16.7 10.8 15.2 9.4 13.2C8.7 12 8.5 11 8.8 10.1C8.9 9.7 9.3 9.5 9 9.5Z" fill="#25d366"/>
+                            <a href="https://wa.me/255756653544?text=Hello%20Heritage%20Cottage%20Hotel%2C%20I'd%20like%20to%20inquire%20about%20your%20rooms%20and%20services." aria-label="WhatsApp" class="social-link social-link--whatsapp" target="_blank" rel="noopener">
+                                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M12 3.25a8.6 8.6 0 0 0-7.4 12.98L3.4 20.6l4.52-1.15A8.6 8.6 0 1 0 12 3.25Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.1 6.4a1 1 0 0 1 1.5-.3l2 1.6a1 1 0 0 1 .3 1.2l-.7 1.6a9.9 9.9 0 0 0 3.3 3.3l1.6-.7a1 1 0 0 1 1.2.3l1.6 2a1 1 0 0 1-.3 1.5c-.8.5-1.8.8-2.7.5a14.8 14.8 0 0 1-8.8-8.8c-.3-.9 0-1.9.5-2.7z" fill="currentColor"/>
                                 </svg>
                             </a>
                         </div>
@@ -116,15 +102,15 @@
                         <!-- Embedded Google Map for Msamala, B4, Songea -->
                         <iframe
                             class="map-embed"
+                            title="Map showing Heritage Cottage Hotel in Songea"
                             src="https://www.google.com/maps?q=Heritage+Cottage+Hotel+Msamala+B4+Songea&z=17&output=embed"
                             width="100%"
                             height="300"
-                            style="border:0;"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <p class="map-note">Location: Msamala, B4, Songea</p>
-                        <p style="text-align:center;margin-top:6px;"><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Heritage+Cottage+Hotel+Msamala+B4+Songea" target="_blank" rel="noopener">Open in Google Maps</a></p>
+                        <p class="map-open-link"><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Heritage+Cottage+Hotel+Msamala+B4+Songea" target="_blank" rel="noopener">Open in Google Maps</a></p>
                     </div>
                 </div>
             </div>
@@ -134,7 +120,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Heritage Cottage Hotel. All rights reserved.</p>
+            <p>&copy; <span data-current-year></span> Heritage Cottage Hotel. All rights reserved.</p>
         </div>
     </footer>
 </body>

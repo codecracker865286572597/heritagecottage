@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us — Heritage Cottage Hotel</title>
-    <meta name="theme-color" content="#f4f1ec">
+    <meta name="theme-color" content="#f5f2ea">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="about.css">
-    <script src="animations.js" defer></script>
+    <script src="animations.js?v=2" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <h1 data-animation="animate--fade-in">Heritage Cottage Hotel</h1>
-            <nav data-animation="animate--fade-up">
+            <nav id="primary-navigation" aria-label="Primary" data-animation="animate--fade-up">
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="rooms.html">Rooms</a></li>
@@ -25,11 +25,11 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        <div class="hamburger">
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
         </div>
     </header>
 
@@ -149,7 +149,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Heritage Cottage Hotel (Padogo Pazuri). All rights reserved.</p>
+            <p>&copy; <span data-current-year></span> Heritage Cottage Hotel (Padogo Pazuri). All rights reserved.</p>
         </div>
     </footer>
 </body>

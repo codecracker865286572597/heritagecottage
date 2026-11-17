@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooms — Heritage Cottage Hotel</title>
-    <meta name="theme-color" content="#f4f1ec">
+    <meta name="theme-color" content="#f5f2ea">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="rooms.css">
-    <script src="animations.js" defer></script>
+    <script src="animations.js?v=2" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <h1 data-animation="animate--fade-in">Heritage Cottage Hotel</h1>
-            <nav data-animation="animate--fade-up">
+            <nav id="primary-navigation" aria-label="Primary" data-animation="animate--fade-up">
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="rooms.html" aria-current="page">Rooms</a></li>
@@ -25,11 +25,11 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        <div class="hamburger">
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
         </div>
     </header>
 
@@ -45,14 +45,13 @@
             <div class="room-grid">
                 <article class="room-card" data-animation="animate--fade-up">
                     <figure class="room-media">
-                        <img src="_DSC0293.jpg" alt="Rosewood Room">
+                        <img src="assets/images/1600/_DSC0293.jpg" srcset="assets/images/800/_DSC0293.jpg 800w, assets/images/1600/_DSC0293.jpg 1600w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" loading="lazy" decoding="async" alt="Rosewood Room">
                     </figure>
                     <div class="card-body">
-                        <h3>A wide spaced Room</h3>
+                        <h3>Spacious Room</h3>
                         <p class="room-meta">Queen bed • Courtyard view • 24 m²</p>
                         <p class="room-desc">Elegant and bright, with rosewood accents and a peaceful courtyard outlook. Perfect for solo travelers or couples.</p>
                         <div class="card-foot">
-                            <!-- <span class="price">$120 / night</span> -->
                             <a class="btn" href="gallery.html">View in Gallery</a>
                         </div>
                     </div>
@@ -60,14 +59,13 @@
 
                 <article class="room-card">
                     <figure class="room-media">
-                        <img src="_DSC0295.jpg" alt="Garden View Room">
+                        <img src="assets/images/1600/_DSC0295.jpg" srcset="assets/images/800/_DSC0295.jpg 800w, assets/images/1600/_DSC0295.jpg 1600w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" loading="lazy" decoding="async" alt="Garden View Room">
                     </figure>
                     <div class="card-body">
                         <h3>Garden View Room</h3>
                         <p class="room-meta">King bed • Garden view • 28 m²</p>
                         <p class="room-desc">Wake up to lush garden views and natural light. Features a king bed and cozy reading nook.</p>
                         <div class="card-foot">
-                            <!-- <span class="price">$135 / night</span> -->
                             <a class="btn" href="contact.html">Book</a>
                         </div>
                     </div>
@@ -75,14 +73,13 @@
 
                 <article class="room-card">
                     <figure class="room-media">
-                        <img src="_DSC0286.jpg" alt="Family Loft">
+                        <img src="assets/images/1600/_DSC0286.jpg" srcset="assets/images/800/_DSC0286.jpg 800w, assets/images/1600/_DSC0286.jpg 1600w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" loading="lazy" decoding="async" alt="Clean self-contained washroom">
                     </figure>
                     <div class="card-body">
                         <h3>Clean self-contained washrooms </h3>
                         <p class="room-meta">Bright and fresh • Sanitized</p>
-                        <p class="room-desc">Retreat to a bathroom that is impeccably clean and hygeinic. Every surface is meticulously sanitized for your complete peace of mind.</p>
+                        <p class="room-desc">Retreat to a spotless, self-contained bathroom, cleaned and sanitized for your comfort.</p>
                         <div class="card-foot">
-                            <!-- <span class="price">$180 / night</span> -->
                             <a class="btn" href="contact.html">Book</a>
                         </div>
                     </div>
@@ -90,14 +87,13 @@
 
                 <article class="room-card">
                     <figure class="room-media">
-                        <img src="_DSC0009.jpg">
+                        <img src="assets/images/1600/_DSC0009.jpg" srcset="assets/images/800/_DSC0009.jpg 800w, assets/images/1600/_DSC0009.jpg 1600w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" loading="lazy" decoding="async" alt="Heritage Suite room">
                     </figure>
                     <div class="card-body">
                         <h3>Heritage Suite</h3>
                         <p class="room-meta">King bed • Fireplace • 38 m²</p>
-                        <p class="room-desc">A haven for cleanliness and. Perfect for a romantic escape.</p>
+                        <p class="room-desc">A spacious suite with a king bed and fireplace, ideal for a relaxing romantic escape.</p>
                         <div class="card-foot">
-                            <!-- <span class="price">$210 / night</span> -->
                             <a class="btn" href="contact.html">Book</a>
                         </div>
                     </div>
@@ -105,14 +101,13 @@
 
                 <article class="room-card">
                     <figure class="room-media">
-                        <img src="AV8A9588.JPG" alt="Terrace Room">
+                        <img src="assets/images/1600/AV8A9588.JPG" srcset="assets/images/800/AV8A9588.JPG 800w, assets/images/1600/AV8A9588.JPG 1600w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 33vw" loading="lazy" decoding="async" alt="Spacious work desk">
                     </figure>
                     <div class="card-body">
                         <h3>Clean and spacious work desk</h3>
                         <p class="room-meta">Wide wooden table • Comfortable cushioned chair</p>
-                        <p class="room-desc">Enjoy your own private terrace with garden seating. Bright, airy, and perfect for morning coffee.</p>
+                        <p class="room-desc">Settle in at a spacious wooden work desk with a comfortable cushioned chair, ideal for reading or getting work done.</p>
                         <div class="card-foot">
-                            <!-- <span class="price">$145 / night</span> -->
                             <a class="btn" href="contact.html">Book</a>
                         </div>
                     </div>
@@ -144,7 +139,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Heritage Cottage Hotel. All rights reserved.</p>
+            <p>&copy; <span data-current-year></span> Heritage Cottage Hotel. All rights reserved.</p>
         </div>
     </footer>
 </body>
